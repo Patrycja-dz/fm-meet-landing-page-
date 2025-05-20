@@ -1,0 +1,279 @@
+:root {
+  /* Colors */
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-cyan-hover: #71c0d4;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-purple-hover: #b18bdd;
+  --color-slate-900: #28283d; /* Dark Blue */
+  --color-slate-600: #87879d; /* Grayish Blue */
+  --color-slate-300: #d1d1df; /* Light Grayish Blue */
+  --color-white: #fafafa;
+
+  /* Typography */
+  --font-family-heading: "Red Hat Display", sans-serif;
+  --font-family-body: "Red Hat Display", sans-serif; /* Assuming same for body, can be changed */
+
+  /* Font Weights (approximated from "Black" and "Medium") */
+  --font-weight-black: 900;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  /* Text Preset 1 (h1) */
+  --font-size-h1: 64px;
+  --line-height-h1: 1.1; /* 110% */
+  --letter-spacing-h1: 0px;
+
+  /* Text Preset 2 (h2) */
+  --font-size-h2: 40px;
+  --line-height-h2: 1.1; /* 110% */
+  --letter-spacing-h2: 0px;
+
+  /* Text Preset 3 (overline/caps subtitle) */
+  --font-size-overline: 16px;
+  --line-height-overline: 1.1;
+  --letter-spacing-overline: 4px;
+
+  /* Text Preset 4 (body-md) */
+  --font-size-body-md: 18px;
+  --line-height-body-md: 1.5;
+  --letter-spacing-body-md: 0px;
+
+  /* Text Preset 5 (body-sm-bold) */
+  --font-size-body-sm: 16px;
+  --line-height-body-sm: 1.5;
+  --letter-spacing-body-sm: 0px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 56px;
+  --space-8: 64px;
+  --space-9: 72px;
+  --space-10: 80px;
+  --space-11: 112px;
+
+  --border-radius: 29px;
+}
+
+.text-cyan-600 {
+  color: var(--color-cyan-600);
+}
+.text-cyan-300 {
+  color: var(--color-cyan-300);
+}
+.text-purple-600 {
+  color: var(--color-purple-600);
+}
+.text-purple-300 {
+  color: var(--color-purple-300);
+}
+.text-slate-900 {
+  color: var(--color-slate-900);
+}
+.text-slate-600 {
+  color: var(--color-slate-600);
+}
+.text-slate-300 {
+  color: var(--color-slate-300);
+}
+.text-white {
+  color: var(--color-white);
+}
+
+.bg-cyan-600 {
+  background-color: var(--color-cyan-600);
+}
+.bg-cyan-300 {
+  background-color: var(--color-cyan-300);
+}
+.bg-purple-600 {
+  background-color: var(--color-purple-600);
+}
+.bg-purple-300 {
+  background-color: var(--color-purple-300);
+}
+.bg-purple-hover {
+  background-color: var(--color-purple-hover);
+}
+.bg-slate-900 {
+  background-color: var(--color-slate-900);
+}
+.bg-slate-600 {
+  background-color: var(--color-slate-600);
+}
+.bg-slate-300 {
+  background-color: var(--color-slate-300);
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.font-heading {
+  font-family: var(--font-family-heading);
+}
+.font-body {
+  font-family: var(--font-family-body);
+}
+
+.font-black {
+  font-weight: var(--font-weight-black);
+}
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.text-h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  letter-spacing: var(--letter-spacing-h1);
+  font-weight: var(--font-weight-black);
+}
+
+.text-h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
+  font-weight: var(--font-weight-black);
+}
+
+.text-overline {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-overline);
+  line-height: var(--line-height-overline);
+  letter-spacing: var(--letter-spacing-overline);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-black);
+}
+
+.text-body-md {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-body-md);
+  letter-spacing: var(--letter-spacing-body-md);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-body-sm-bold {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-body-sm);
+  letter-spacing: var(--letter-spacing-body-sm);
+  font-weight: var(--font-weight-black);
+}
+
+.m-1 {
+  margin: var(--space-1);
+}
+.m-2 {
+  margin: var(--space-2);
+}
+.m-3 {
+  margin: var(--space-3);
+}
+.m-4 {
+  margin: var(--space-4);
+}
+.m-5 {
+  margin: var(--space-5);
+}
+.m-6 {
+  margin: var(--space-6);
+}
+.m-7 {
+  margin: var(--space-7);
+}
+.m-8 {
+  margin: var(--space-8);
+}
+.m-9 {
+  margin: var(--space-9);
+}
+.m-10 {
+  margin: var(--space-10);
+}
+.m-11 {
+  margin: var(--space-11);
+}
+
+.p-1 {
+  padding: var(--space-1);
+}
+.p-2 {
+  padding: var(--space-2);
+}
+.p-3 {
+  padding: var(--space-3);
+}
+.p-4 {
+  padding: var(--space-4);
+}
+.p-5 {
+  padding: var(--space-5);
+}
+.p-6 {
+  padding: var(--space-6);
+}
+.p-7 {
+  padding: var(--space-7);
+}
+.p-8 {
+  padding: var(--space-8);
+}
+.p-9 {
+  padding: var(--space-9);
+}
+.p-10 {
+  padding: var(--space-10);
+}
+.p-11 {
+  padding: var(--space-11);
+}
+
+.button-group__button {
+  padding-inline: 2.5em;
+  padding-block: 1em;
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-group__button[data-hover="purple"]:hover {
+  background-color: var(--color-purple-hover);
+}
+.button-group__button[data-hover="blue"]:hover {
+  background-color: var(--color-cyan-hover);
+}
+
+.number-indicator {
+  border-left: 1px solid var(--color-slate-300);
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.number-indicator__number {
+  width: 56px;
+  display: inline-block;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid var(--color-slate-300);
+  color: var(--color-slate-600);
+  text-align: center;
+  line-height: 56px;
+  position: relative;
+  bottom: 0;
+  transform: translate(-28px, 80px);
+}
