@@ -1,3 +1,4 @@
+@import "design-system.css";
 @layer reset {
   *,
   *::before,
@@ -51,7 +52,6 @@
     text-wrap: balance;
   }
 
-  /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
     color: currentColor;
@@ -65,5 +65,88 @@
 
   :target {
     scroll-margin-block: 5ex;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--space-6);
+  padding-inline: var(--space-10);
+}
+
+.hero {
+  margin-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.hero__image {
+  background-image: url("../starter-code/assets/tablet/image-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: min(100%, 400px);
+  aspect-ratio: 2;
+}
+
+.hero__title {
+  margin-top: var(--space-6);
+}
+
+.hero__content-wrapper {
+  text-align: center;
+  padding-inline: var(--space-5);
+  padding-block-end: var(--space-8);
+}
+
+.hero__description {
+  margin-block: var(--space-4);
+}
+
+.grid {
+  display: grid;
+  margin-block-start: var(--space-8);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.grid__image {
+  border-radius: 10px;
+}
+.text-center {
+  text-align: center;
+}
+.grid__title {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.footer {
+  background-color: var(--color-cyan-600);
+  opacity: 0.7;
+  background-image: url("../starter-code/assets/mobile/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-blend-mode: multiply;
+  padding: 64px 32px 64px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .text-p {
+  margin-block: var(--space-4);
+}
+
+.footer .button-group__button {
+  margin: 0 auto;
+}
+
+@media (min-width: 40em) {
+  .hero__image {
+    background-size: min(100%, 700px);
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
