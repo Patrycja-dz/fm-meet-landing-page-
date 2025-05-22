@@ -26,6 +26,8 @@
     <header class="hero">
       <div class="hero__image"></div>
       <div class="hero__content-wrapper">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
         <hgroup>
           <h1 class="hero__title text-slate-900 text-h1">
             Group Chat for Everyone
@@ -108,24 +110,26 @@
       <span class="number-indicator__number text-body-sm-bold">02</span>
     </div>
     <footer class="footer">
-      <hgroup>
-        <h2 class="text-preset-2 text-center text-white">
-          Experience more together
-        </h2>
-        <p class="text-p text-center text-white">
-          Stay connected with reliable HD meetings and unlimited one-on-one and
-          group video sessions.
-        </p>
-      </hgroup>
-
-      <button
-        class="button-group__button bg-purple-600 text-body-sm-bold"
-        data-hover="purple"
-        style="margin-top: var(--space-3)"
-      >
-        Download
-        <span class="button-group__button-version text-purple-300">v1.3</span>
-      </button>
+      <div class="footer__content">
+        <div class="footer__text">
+          <h2 class="text-preset-2 text-white">Experience more together</h2>
+          <p class="text-p text-white">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+        </div>
+        <div class="footer__button">
+          <button
+            class="button-group__button bg-purple-600 text-body-sm-bold"
+            data-hover="purple"
+          >
+            Download
+            <span class="button-group__button-version text-purple-300"
+              >v1.3</span
+            >
+          </button>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
