@@ -189,7 +189,9 @@
 .text-p {
   font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
 }
-
+.p-8-block {
+  padding-block-start: var(--space-8);
+}
 .m-1 {
   margin: var(--space-1);
 }
