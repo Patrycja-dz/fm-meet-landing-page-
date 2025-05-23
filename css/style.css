@@ -81,7 +81,7 @@
 }
 
 .hero__image {
-  background-image: url("../starter-code/assets/tablet/image-hero.png");
+  background-image: url("../assets/tablet/image-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: min(100%, 400px);
@@ -133,7 +133,7 @@
 
 .footer {
   background-color: var(--color-cyan-600);
-  background-image: url("../starter-code/assets/mobile/image-footer.jpg");
+  background-image: url("../assets/mobile/image-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-burn;
@@ -203,11 +203,11 @@
   }
 
   .bg-left {
-    background-image: url("../starter-code/assets/desktop/image-hero-left.png");
+    background-image: url("../assets/desktop/image-hero-left.png");
     left: 0;
   }
   .bg-right {
-    background-image: url("../starter-code/assets/desktop/image-hero-right.png");
+    background-image: url("../assets/desktop/image-hero-right.png");
     right: 0;
   }
 
@@ -222,7 +222,7 @@
   }
 
   .footer {
-    background-image: url("../starter-code/assets/desktop/image-footer.jpg");
+    background-image: url("../assets/desktop/image-footer.jpg");
     background-repeat: no-repeat;
     padding-block: var(--space-8);
     color: white;
