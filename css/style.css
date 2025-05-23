@@ -170,6 +170,9 @@
 }
 
 @media (min-width: 90em) {
+  .navbar {
+    padding-top: var(--space-10);
+  }
   .hero {
     max-width: 85vw;
     margin-inline: auto;
@@ -184,6 +187,9 @@
   .hero hgroup {
     max-width: 60ch;
     margin-inline: auto;
+  }
+  .hero-title {
+    padding-top: var(--space-8);
   }
   .hero .hero__content-wrapper {
     margin: 0 auto;
