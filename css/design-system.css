@@ -290,8 +290,9 @@
 }
 .number-indicator:first-of-type {
   padding: var(--space-5);
-  margin-top: 50px;
+  margin-top: var(--space-6);
 }
+
 @media (min-width: 40em) {
   .number-indicator {
     margin-block: var(--space-7);

@@ -21,14 +21,26 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <nav class="navbar" role="navigation">
-      <img src="./assets/logo.svg" alt="meet logo" />
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <img
+        src="./assets/logo.svg"
+        alt="Meet logo - Home"
+        tabindex="0"
+        role="img"
+      />
     </nav>
+
     <header class="hero" role="banner">
-      <div class="hero__image"></div>
+      <div
+        class="hero__image"
+        role="img"
+        aria-label="Hero image showing people in video calls"
+      ></div>
       <div class="hero__content-wrapper">
-        <div class="bg-left fade-in-element"></div>
-        <div class="bg-right fade-in-element"></div>
+        <div class="bg-left fade-in-element" aria-hidden="true"></div>
+        <div class="bg-right fade-in-element" aria-hidden="true"></div>
         <hgroup>
           <h1 class="hero__title text-slate-900 text-h1 fade-in-element">
             Group Chat for Everyone
@@ -38,68 +50,98 @@
             collaborate across any device.
           </p>
         </hgroup>
-        <div class="button-group">
+        <div class="button-group" role="group" aria-label="Download options">
           <button
             class="button-group__button bg-cyan-600 text-body-sm-bold"
             data-hover="blue"
+            type="button"
+            aria-describedby="download-version"
           >
             Download
-            <span class="button-group__button-version text-cyan-300">v1.3</span>
+            <span
+              class="button-group__button-version text-cyan-300"
+              id="download-version"
+              >v1.3</span
+            >
           </button>
           <button
             class="button-group__button bg-purple-600 text-body-sm-bold button--mt-3"
             data-hover="purple"
+            type="button"
+            aria-expanded="false"
+            aria-haspopup="dialog"
           >
             What is it?
           </button>
         </div>
       </div>
     </header>
-    <div class="number-indicator" role="separator">
-      <span class="number-indicator__number text-body-sm-bold">01</span>
+
+    <div class="number-indicator" role="separator" aria-label="Section 1">
+      <span
+        class="number-indicator__number text-body-sm-bold"
+        aria-label="Step 1 of 2"
+        >01</span
+      >
     </div>
-    <main role="main">
-      <div class="hero__content-wrapper">
-        <div class="grid">
+
+    <main role="main" id="main-content">
+      <section class="hero__content-wrapper" aria-labelledby="features-heading">
+        <div class="grid" role="group" aria-label="Product feature images">
           <img
             src="./assets/desktop/image-woman-in-videocall.jpg"
-            alt="Woman participating in a video call on a laptop."
+            alt="Woman participating in a video call on a laptop, demonstrating remote collaboration"
             class="grid__image"
+            loading="lazy"
           />
           <img
             src="./assets/desktop/image-women-videochatting.jpg"
-            alt="Group of women video chatting together."
+            alt="Group of women video chatting together, showing team communication"
             class="grid__image"
+            loading="lazy"
           />
           <img
             src="./assets/desktop/image-men-in-meeting.jpg"
-            alt="Men collaborating in an office meeting room."
+            alt="Men collaborating in an office meeting room with screens and devices"
             class="grid__image"
+            loading="lazy"
           />
           <img
             src="./assets/desktop/image-man-texting.jpg"
-            alt="Man texting on his phone while walking outdoors."
+            alt="Man texting on his phone while walking outdoors, showing mobile connectivity"
             class="grid__image"
+            loading="lazy"
           />
         </div>
-      </div>
-      <p class="text-preset-3 text-cyan-600 text-center">
-        Built for modern use
-      </p>
-      <hgroup class="main-hgroup">
-        <h2 class="text-preset-2 grid__title text-center">
-          Smarter meetings, all in one place
-        </h2>
-        <p class="text-slate-600 text-p text-center">
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
+
+        <p class="text-preset-3 text-cyan-600 text-center" role="text">
+          Built for modern use
         </p>
-      </hgroup>
+
+        <hgroup class="main-hgroup">
+          <h2
+            class="text-preset-2 grid__title text-center"
+            id="features-heading"
+          >
+            Smarter meetings, all in one place
+          </h2>
+          <p class="text-slate-600 text-p text-center">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </hgroup>
+      </section>
     </main>
-    <div class="number-indicator" role="separator">
-      <span class="number-indicator__number text-body-sm-bold">02</span>
+
+    <div class="number-indicator" role="separator" aria-label="Section 2">
+      <span
+        class="number-indicator__number text-body-sm-bold"
+        aria-label="Step 2 of 2"
+        >02</span
+      >
     </div>
+
     <footer class="footer" role="contentinfo">
       <div class="footer__content">
         <div class="footer__text">
@@ -115,9 +157,13 @@
           <button
             class="button-group__button bg-purple-600 text-body-sm-bold"
             data-hover="purple"
+            type="button"
+            aria-describedby="footer-download-version"
           >
             Download
-            <span class="button-group__button-version text-purple-300"
+            <span
+              class="button-group__button-version text-purple-300"
+              id="footer-download-version"
               >v1.3</span
             >
           </button>
