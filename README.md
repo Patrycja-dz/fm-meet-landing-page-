@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Patrycja-dz/fm-meet-landing-page-)
+- Live Site URL: [ live site URL](https://patrycja-dz.github.io/fm-meet-landing-page-/)
 
 ## My process
 
@@ -46,13 +46,13 @@ This project was a great opportunity to practice building a responsive landing p
   :root {
     --color-cyan-600: #4d96a9;
     --font-family-heading: "Red Hat Display", sans-serif;
-    --space-4: 1rem; /* Example spacing unit */
+    --space-4: 1rem;
   }
 
   .hero__title {
-    color: var(--color-slate-900); /* Using a color variable */
-    font-family: var(--font-family-heading); /* Using a font variable */
-    margin-block: var(--space-4); /* Using a spacing variable */
+    color: var(--color-slate-900);
+    font-family: var(--font-family-heading);
+    margin-block: var(--space-4);
   }
   ```
 
@@ -60,24 +60,22 @@ This project was a great opportunity to practice building a responsive landing p
 
 ```css
 .hero__image {
-  background-image: url("../starter-code/assets/tablet/image-hero.png");
-  /* ... other styles ... */
+  background-image: url("../assets/tablet/image-hero.png");
 }
 
 .grid {
-  grid-template-columns: repeat(2, 1fr); /* Mobile/Tablet */
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 90em) {
-  /* Desktop */
   .hero__image {
-    background-image: none; /* Desktop uses different image elements */
+    background-image: none;
   }
   .grid {
-    grid-template-columns: repeat(4, 1fr); /* Desktop */
+    grid-template-columns: repeat(4, 1fr);
   }
   .footer {
-    background-image: url("../starter-code/assets/desktop/image-footer.jpg");
+    background-image: url("../assets/desktop/image-footer.jpg");
   }
 }
 ```
