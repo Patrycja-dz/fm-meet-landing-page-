@@ -86,6 +86,7 @@
   background-repeat: no-repeat;
   background-size: min(100%, 400px);
   aspect-ratio: 2;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .hero__title {
@@ -111,6 +112,11 @@
 
 .grid__image {
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(40, 40, 61, 0.2);
 }
 .text-center {
   text-align: center;
@@ -119,26 +125,33 @@
   margin-top: var(--space-3);
   margin-bottom: var(--space-5);
 }
+.main-hgroup {
+  padding-inline: var(--space-5);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-8);
+}
 
 .footer {
   background-color: var(--color-cyan-600);
-  opacity: 0.7;
   background-image: url("../starter-code/assets/mobile/image-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
   background-blend-mode: color-burn;
-  padding: 64px 32px 64px 32px;
+  padding: var(--space-8) var(--space-5);
   display: flex;
   flex-direction: column;
+  opacity: 0.7;
 }
 
 .footer .text-p {
   margin-block: var(--space-4);
 }
 
-.footer .button-group__button {
+.footer__button {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 40em) {
@@ -148,9 +161,7 @@
   .grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  .footer__content {
-    text-align: center;
-  }
+
   .text-center {
     text-align: center;
     max-width: 65ch;
@@ -163,7 +174,7 @@
     max-width: 85vw;
     margin-inline: auto;
   }
-  .hero,
+
   .hero__image {
     background-image: none;
   }
@@ -211,12 +222,9 @@
   }
 
   .footer {
-    background-color: var(--color-cyan-600);
     background-image: url("../starter-code/assets/desktop/image-footer.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: color-burn;
-    padding-block: 64px;
+    padding-block: var(--space-8);
     color: white;
   }
 
@@ -228,10 +236,12 @@
     gap: var(--space-6);
     margin: 0 170px;
   }
+
   .footer__text {
     display: flex;
     align-items: center;
   }
+
   .footer__text h2 {
     margin: 0 0 var(--space-3) 0;
     max-width: 15ch;
@@ -247,5 +257,21 @@
   .footer__button {
     display: flex;
     justify-content: flex-end;
+    margin: 0;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-element {
+  animation: fadeIn 0.5s ease-out forwards;
 }

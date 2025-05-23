@@ -257,7 +257,9 @@
 .p-11 {
   padding: var(--space-11);
 }
-
+.button--mt-3 {
+  margin-top: var(--space-3);
+}
 .button-group__button {
   padding-inline: 2.5em;
   padding-block: 1em;
@@ -265,14 +267,19 @@
   border: none;
   color: var(--color-white);
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .button-group__button[data-hover="purple"]:hover {
   background-color: var(--color-purple-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .button-group__button[data-hover="blue"]:hover {
   background-color: var(--color-cyan-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .number-indicator {

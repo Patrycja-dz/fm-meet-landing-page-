@@ -21,15 +21,15 @@
   </head>
   <body>
     <nav class="navbar">
-      <img src="./assets/logo.svg" alt="" />
+      <img src="./assets/logo.svg" alt="meet logo" />
     </nav>
     <header class="hero">
       <div class="hero__image"></div>
       <div class="hero__content-wrapper">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
+        <div class="bg-left fade-in-element"></div>
+        <div class="bg-right fade-in-element"></div>
         <hgroup>
-          <h1 class="hero__title text-slate-900 text-h1">
+          <h1 class="hero__title text-slate-900 text-h1 fade-in-element">
             Group Chat for Everyone
           </h1>
           <p class="hero__description text-slate-600 text-p">
@@ -43,15 +43,11 @@
             data-hover="blue"
           >
             Download
-            <span
-              class="button-group__button-version text-cyan-300 text-cyan-300"
-              >v1.3</span
-            >
+            <span class="button-group__button-version text-cyan-300">v1.3</span>
           </button>
           <button
-            class="button-group__button bg-purple-600 text-body-sm-bold"
+            class="button-group__button bg-purple-600 text-body-sm-bold button--mt-3"
             data-hover="purple"
-            style="margin-top: var(--space-3)"
           >
             What is it?
           </button>
@@ -66,22 +62,22 @@
         <div class="grid">
           <img
             src="./assets/desktop/image-woman-in-videocall.jpg"
-            alt=""
+            alt="Woman participating in a video call on a laptop."
             class="grid__image"
           />
           <img
             src="./assets/desktop/image-women-videochatting.jpg"
-            alt=""
+            alt="Group of women video chatting together."
             class="grid__image"
           />
           <img
             src="./assets/desktop/image-men-in-meeting.jpg"
-            alt=""
+            alt="Men collaborating in an office meeting room."
             class="grid__image"
           />
           <img
             src="./assets/desktop/image-man-texting.jpg"
-            alt=""
+            alt="Man texting on his phone while walking outdoors."
             class="grid__image"
           />
         </div>
@@ -89,13 +85,7 @@
       <p class="text-preset-3 text-cyan-600 text-center">
         Built for modern use
       </p>
-      <hgroup
-        style="
-          padding-inline: var(--space-5);
-          padding-bottom: var(--space-4);
-          margin-bottom: var(--space-8);
-        "
-      >
+      <hgroup class="main-hgroup">
         <h2 class="text-preset-2 grid__title text-center">
           Smarter meetings, all in one place
         </h2>
@@ -112,8 +102,10 @@
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__text">
-          <h2 class="text-preset-2 text-white">Experience more together</h2>
-          <p class="text-p text-white">
+          <h2 class="text-preset-2 text-white text-center">
+            Experience more together
+          </h2>
+          <p class="text-p text-white text-center">
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>
